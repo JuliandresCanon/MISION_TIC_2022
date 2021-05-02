@@ -9,5 +9,3 @@ os.system ("cls")
 
 print("Hola Misión TIC 2022... soy ")
 print(str(name))
-
-#Definitivo 
