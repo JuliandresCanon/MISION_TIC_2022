@@ -1,0 +1,1 @@
+# Programa inicial para un algoritmo
