@@ -1,0 +1,8 @@
+run="python reto_mision_tic_2022.py"
+language="python3"
+onBoot="echo Booting up!"
+
+[packager]
+afterInstall="date >> package_install_log"
+ignoredPaths=[".git"]
+ignoredPackages=["twitter", "discord"]
