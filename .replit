@@ -1,4 +1,4 @@
-run="python reto_mision_tic_2022.py"
+run="python clase_3.py"
 language="python3"
 onBoot="echo Booting up!"
 
