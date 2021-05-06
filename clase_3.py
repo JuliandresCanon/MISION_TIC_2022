@@ -6,6 +6,3 @@ casado = False
 print(nombre + apellido + str(edad))
 print(type(casado))
 
-# indent rainbow
-# intellicode
-# language pack for VSC
