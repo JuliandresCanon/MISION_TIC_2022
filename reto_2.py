@@ -3,16 +3,16 @@
 import os
 os.system ("clear")
 
-peso=float(input("Ingrese su Peso en kg: " ))
-estatura=float(input("Ingrese su Estatura en m: " ))
+peso=float(input("Ingrese su Peso (kg): " ))
+estatura=float(input("Ingrese su Estatura (m): " ))
 
 imc=(round(peso/(estatura*estatura), 1))
 
 if imc < 18.5:
-    print(" IMC = " + str(imc) + " Bajo Peso")
+    print("Bajo peso")
 elif imc < 25:
-    print(" IMC = " + str(imc) + " Normal")
+    print("Normal")
 elif imc < 30:
-    print(" IMC = " + str(imc) + " Sobrepeso")
+    print("Sobrepeso")
 else:
-    print(" IMC = " + str(imc) + " Obeso")
+    print("Obeso")
