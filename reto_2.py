@@ -1,7 +1,7 @@
 #RetoMisionTic2022 @Ministerio_TIC @UIS
 
 import os
-os.system ("clear")
+os.system ("cls")
 
 peso=float(input("Ingrese su Peso (kg): " ))
 estatura=float(input("Ingrese su Estatura (m): " ))
