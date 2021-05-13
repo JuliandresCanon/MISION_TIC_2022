@@ -1,5 +1,5 @@
-x = int(input())
-y = int(input())
+x = int(input("Coordenada X: "))
+y = int(input("Coordenada Y: "))
 
 if x == 0 and y == 0:
     #x es igual a 0, y es igual a 0
