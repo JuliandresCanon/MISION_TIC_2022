@@ -1,6 +1,6 @@
 #Calculo de costos arriendo de Vehiculo
 
-km = int(input("Ingrese la distancia recorrida: ")
+km = int(input("Ingrese la distancia recorrida: "))
 
 if km < 300:
     pago = 300000
@@ -10,3 +10,4 @@ else:
     pago = 300000 + 15000*(700) + 10000*(km - 1000)
 
 print("El costo del alquiler es: $", pago)
+print("El costo del impuesto es: $", pago*0.20)
