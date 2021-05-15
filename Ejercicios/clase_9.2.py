@@ -10,4 +10,4 @@ else:
     pago = 300000 + 15000*(700) + 10000*(km - 1000)
 
 print("El costo del alquiler es: $", pago)
-print("El costo del impuesto es: $", pago*0.20)
+print("El costo del impuesto es: $", pago - pago/1.20)
