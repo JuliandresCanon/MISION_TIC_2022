@@ -13,7 +13,7 @@ if l1 < (l2 + l3) and l2 < (l1 + l3) and l3 < (l1 + l2):
     elif l1 != l2 != l3:
         tipo = str("Escaleno")
     else:
-        tipo = str("Isoceles")
+        tipo = str("Isosceles")
 
     print("Es un triangulo y se clasifica como: \n", tipo )
 else:
