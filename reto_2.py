@@ -6,7 +6,7 @@ os.system ("cls")
 peso=float(input("Ingrese su Peso (kg): " ))
 estatura=float(input("Ingrese su Estatura (m): " ))
 
-imc=(round(peso/(estatura*estatura), 1))
+imc=(peso/(estatura*estatura))
 
 if imc < 18.5:
     print("Bajo peso")
@@ -16,3 +16,5 @@ elif imc < 30:
     print("Sobrepeso")
 else:
     print("Obeso")
+
+print(imc)
