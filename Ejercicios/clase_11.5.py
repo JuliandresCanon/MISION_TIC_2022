@@ -41,10 +41,10 @@ print("... El Total de mercado es de: $"+ str(subtotal))
 cantidad = cantidad + cant_salsas
 print("Se han comprado "+ str(cantidad) + " Productos")
 
-pago = int(input("Ingrese el monto recibido para el pago: "))
-vueltas = pago - subtotal
+pago = int(input("Ingrese el monto recibido del cliente: "))
+cambio = pago - subtotal
 
-if vueltas > 0:
-    print("El pago fue realizado efectivamente: \n El monto a devolver es: $" + str(vueltas))
+if cambio > 0:
+    print("El pago fue realizado efectivamente: \n Cambio: $" + str(cambio))
 else:
-    print("El pago no fue realizado efectivamente: \n El monto recibido es insuficiente, faltan $"+ str(vueltas*-1))
+    print("El monto recibido es insuficiente: \n Faltan $"+ str(cambio*-1))
