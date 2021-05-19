@@ -1,24 +1,17 @@
-x = int(input("Coordenada X: "))
-y = int(input("Coordenada Y: "))
+x = int(input())
+y = int(input())
 
-if x == 0 and y == 0:
-    #x es igual a 0, y es igual a 0
-    print("Origin")
-elif x == 0:
-    #x es igual a 0
-    print("Axis Y")
-elif y == 0:
-    #y es igual a 0
-    print("Axis X")
-elif x > 0 and y > 0:
-    #x es mayor que 0, y es mayor que 0
-    print("Quadrant I")
-elif x > 0 and y < 0:
-    #x es mayor que 0, y es menor que 0
-    print("Quadrant IV")
-elif x < 0 and y > 0:
-    #x es menor que 0, y es mayor que 0
-    print("Quadrant II")
-elif x < 0 and y < 0:
-    #x es menor que 0, y es nenor que 0
-    print("Quadrant III")
+if x > 0:
+    if y > 0:
+        #x es mayor que 0, y es mayor que 0
+        print("Quadrant I")
+    else:
+        #x es mayor que 0, y es menor o igual que 0
+        print("Quadrant IV")
+else:
+    if y > 0:
+        #x es menor o igual que 0, y es mayor que 0
+        print("Quadrant II")
+    else:
+        #x es menor o igual que 0, y es menor o igual que 0
+        print("Quadrant III")
