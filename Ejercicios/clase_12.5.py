@@ -1,39 +1,35 @@
-# INICIO DE COMPRAS EN SUPERMERCADO
+#COMPRAS EN SUPERMERCADO
 
-precio_manzana = 2500
-cant_manzana = 5
-precio_panes = 1500
-cant_panes = 3
-precio_salchichas = 1200
-cant_salchichas = 7
-precio_salsas = 3000
-cant_salsas = 2
+cant_manzanas = int(input("Ingrese cantidad de manzanas: "))
+cant_panes = int(input("Ingrese cantidad de panes: "))
+cant_salchichas = int(input("Ingrese cantidad de salchichas: "))
+cant_salsas = int(input("Ingrese cantidad de salsas: "))
 
 subtotal = 0
 cantidad = 0
 
 print("Calculando el total del mercado... ")
 
-for i in range (cant_manzana):
-    subtotal += precio_manzana
+for i in range (cant_manzanas):
+    subtotal += 2500
     cantidad += 1
     print("... El Subtotal sería de: $"+ str(subtotal))
     print("Se han comprado "+ str(cantidad) + " productos")
 
 for i in range (cant_panes):
-    subtotal += precio_panes
+    subtotal += 1500
     cantidad += 1
     print("... El Subtotal sería de: $"+ str(subtotal))
     print("Se han comprado "+ str(cantidad) + " productos")
 
 for i in range (cant_salchichas):
-    subtotal += precio_salchichas
+    subtotal += 1200
     cantidad += 1
     print("... El Subtotal sería de: $"+ str(subtotal))
     print("Se han comprado "+ str(cantidad) + " productos")
 
 for i in range (cant_salsas):
-    subtotal += precio_salsas
+    subtotal += 3000
     cantidad += 1
     print("... El Subtotal sería de: $"+ str(subtotal))
     print("Se han comprado "+ str(cantidad) + " productos")
