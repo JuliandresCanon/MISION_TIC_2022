@@ -21,4 +21,4 @@ while bandera == True :
     print(cont, bandera)
     if (cont == 5):
         bandera = False
-        print(cont, bandera)
+        print(bandera)
