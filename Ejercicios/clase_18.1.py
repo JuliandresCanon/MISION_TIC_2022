@@ -2,3 +2,7 @@
 
 import math
 print(math.comb(5, 2))
+
+import datetime
+fecha_hora = datetime.datetime.now()
+print(fecha_hora)
