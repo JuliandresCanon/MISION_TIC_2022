@@ -21,7 +21,7 @@ def calculadoraMes(registroDeAhorros, nombre):
 
         for m in range(1, len(b)):
             c = int(b[m])
-            print(b[m])
+            print(c)
             print(type(c))
     
     print(len(a))
