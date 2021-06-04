@@ -12,17 +12,17 @@
 
 def calculadoraMes(registroDeAhorros, nombre):
 
-    meses = registroDeAhorros.split(";")
+    registroMes = registroDeAhorros.split(";")
     resultado = []
     
     for n in range(4):
-        datos = meses[n].split(",")
+        datosMes = registroMes[n].split(",")
         aportes = 0
         
-        for m in range(1, len(datos)):
-            aportes += int(datos[m])
+        for m in range(1, len(datosMes)):
+            aportes += int(datosMes[m])
             
-        resultado.append(datos[0]+": "+str(aportes))
+        resultado.append(datosMes[0]+": "+str(aportes))
     
     return nombre, resultado
 
