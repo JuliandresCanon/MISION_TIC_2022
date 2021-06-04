@@ -12,24 +12,20 @@
 
 def calculadoraMes(registroDeAhorros, nombre):
 
-    a = registroDeAhorros.split(";")
-    print(a)
-
+    meses = registroDeAhorros.split(";")
+    resultado = []
+    
     for n in range(4):
-        b = a[n].split(",")
-        print(b)
-
-        for m in range(1, len(b)):
-            c = int(b[m])
-            print(c)
-            print(type(c))
+        datos = meses[n].split(",")
+        aportes = 0
+        
+        for m in range(1, len(datos)):
+            aportes += int(datos[m])
+            
+        resultado.append(datos[0]+": "+str(aportes))
     
-    print(len(a))
-    print(type(a))
-    
-    return nombre, a
+    return nombre, resultado
 
 
 print(calculadoraMes("Enero,4,3,4;Febrero,4,3;Marzo,4,3,4;Abril,4,3,4,4", "daniel"))
 
-print("('daniel', ['Enero': 11, 'Febrero': 7, 'Marzo': 11, 'Abril': 15])")
