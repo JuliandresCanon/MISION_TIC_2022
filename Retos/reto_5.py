@@ -23,8 +23,9 @@ def calculadoraMes(registroDeAhorros, nombre):
             aportes += int(datosMes[m])
             
         resultado.append(datosMes[0]+": "+str(aportes))
-    
-    return nombre, resultado
+        conjunto = set(resultado)
+        
+    return nombre, conjunto
 
 
 print(calculadoraMes("Enero,4,3,4;Febrero,4,3;Marzo,4,3,4;Abril,4,3,4,4", "daniel"))
