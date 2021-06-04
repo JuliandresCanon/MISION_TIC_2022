@@ -1,4 +1,4 @@
-palabra = "ESTERNOCLEIDOMASTOIDEO"
+palabra = str(input("Ingrese una palabra: "))
 vocal = "aeiou"
 cant = []
 
