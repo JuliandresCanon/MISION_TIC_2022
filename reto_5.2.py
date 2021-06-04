@@ -15,7 +15,7 @@ def calculadoraMes(registroDeAhorros, nombre):
     registroMes = registroDeAhorros.split(";")
     resultado = []
     
-    for n in range(4):
+    for n in range(len(registroMes)):
         datosMes = registroMes[n].split(",")
         aportes = 0
         
@@ -28,4 +28,3 @@ def calculadoraMes(registroDeAhorros, nombre):
 
 
 print(calculadoraMes("Enero,4,3,4;Febrero,4,3;Marzo,4,3,4;Abril,4,3,4,4", "daniel"))
-
