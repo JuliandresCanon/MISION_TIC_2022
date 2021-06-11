@@ -28,6 +28,6 @@ def calculadoraMes(registroDeAhorros, nombre):
     return nombre, resultado
 
 
-print(calculadoraMes("Enero,40000,35000,80000;Febrero,90000,30000;Marzo,50000,35000,25000;Abril,75000,35000,42000,38000", "daniel"))
+print(calculadoraMes("Enero,40000,35000,80000;Febrero,90000,30000;Marzo,50000,35000,25000;Abril,75000,35000,42000,38000","Daniel"))
 
-print("('daniel', {'Enero': 155000, 'Febrero': 120000, 'Marzo': 110000, 'Abril': 190000})")
+print("('Daniel', {'Enero': 155000, 'Febrero': 120000, 'Marzo': 110000, 'Abril': 190000})")
