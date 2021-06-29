@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "MISION_TIC_2022_1e6bc4d9"
+        },
+        {
             "name": "Python",
             "type": "python",
             "request": "launch",
