@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch PrimerPrograma",
+            "request": "launch",
+            "mainClass": "com.misiontic2022.miprimerproyecto.PrimerPrograma",
+            "projectName": "MiPrimerProyecto"
+        },
+        {
+            "type": "java",
             "name": "Launch Main",
             "request": "launch",
             "mainClass": "Main",
