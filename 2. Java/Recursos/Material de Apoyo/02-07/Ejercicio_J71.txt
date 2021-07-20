@@ -1,0 +1,7 @@
+Una comunidad organizada realizará un evento que incluye una fiesta donde se realizará un baile de gala. La fiesta se hará en 2 salones diferentes para el disfrute de jóvenes (los que tengan menos de 18 años) y adultos (los que superen los 18 años). El salón N° 1 será para los jóvenes y el N° 2 para los adultos. Para la fiesta deben formarse parejas (hombre-mujer) y los  que queden sin pareja deben salir del salón.
+Diseñe un Programa en C# que lea la edad y el sexo de las personas que llegan al evento. Al final debe escribir lo siguiente:
+Cantidad de personas que entraron a cada uno de los salones.
+Cantidad de parejas jóvenes formadas.
+Cantidad de parejas de adultos formadas.
+Cantidad de personas que sobran y de qué sexo, en caso de ser así, del Salón N° 
+Cantidad de personas que sobran y de qué sexo, en caso de ser así, del Salón N° 2.
