@@ -12,8 +12,9 @@ public class Semana2 {
     //  Personas();
     //  Animal();
     //  Lugar();
-        Muebles();
-        
+    //  Muebles();
+        Persona();
+    
     }
     
     public static void Personas() {
@@ -39,7 +40,7 @@ public class Semana2 {
         
     }
     
-     public static void Animal() {
+    public static void Animal() {
         
         Scanner Ingreso = new Scanner(System.in);
         
@@ -56,7 +57,7 @@ public class Semana2 {
         
     }
     
-     public static void Lugar() {
+    public static void Lugar() {
         
         Scanner Ingreso = new Scanner(System.in);
         
@@ -80,7 +81,7 @@ public class Semana2 {
     }    
      
     
-     public static void Muebles() {
+    public static void Muebles() {
         
         Scanner Ingreso = new Scanner(System.in);
         
@@ -100,5 +101,38 @@ public class Semana2 {
         
         Mueble1.infoMueble(alto, ancho, largo);
         
-    }         
+    }
+     
+    public static void Persona() {
+        
+        Scanner Ingreso = new Scanner(System.in);
+        
+        System.out.println("Nombre: ");
+        String nombre = Ingreso.nextLine();
+        System.out.println("Sexo (H/M): ");
+        String sexo = Ingreso.nextLine();
+        System.out.println("Edad: ");
+        int edad = Ingreso.nextInt();
+        System.out.println("Peso (kg): ");
+        double peso = Ingreso.nextDouble();
+        System.out.println("Altura (m): ");
+        double altura = Ingreso.nextDouble();
+        
+        Persona Persona1 = new Persona(nombre, edad, peso, altura);
+        
+        int n = (int) Persona1.calcularIMC();
+        switch (n) {
+            case -1:
+                System.out.println("Bajo");
+            break;
+            case 0:
+                System.out.println("Normal");
+            break;
+            case 1:
+                System.out.println("Sobrepeso");
+            break;
+        }
+        
+        System.out.println(Persona1.toString());
+    }
 }
