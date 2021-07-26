@@ -11,6 +11,12 @@ public class Mapas {
 
     public static void main(String[] args) {
         
+        Departamentos();
+        
+    }
+    
+    public static void Departamentos() {
+        
         Map<String, Departamentos> Gobernadores = new TreeMap<String, Departamentos>();
         
         Gobernadores.put("Garcia", new Departamentos("Cundinamarca", "Bogotá"));

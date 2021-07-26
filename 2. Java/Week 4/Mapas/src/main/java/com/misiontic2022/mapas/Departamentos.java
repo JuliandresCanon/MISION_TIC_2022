@@ -1,16 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.misiontic2022.mapas;
 
-/**
- *
- * @author JuliandresCanon
- */
+// @author JuliandresCanon
+
 public class Departamentos {
-    
+     
     public String departamento, capital;
     
         public Departamentos(String departamento, String capital) {
