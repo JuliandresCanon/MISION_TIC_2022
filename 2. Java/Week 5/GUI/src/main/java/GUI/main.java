@@ -3,21 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.misiontic2022.gui;
-
-import javax.swing.JOptionPane;
+package GUI;
 
 /**
  *
  * @author JuliandresCanon
  */
-public class PrimerGUI extends javax.swing.JFrame {
+public class main extends javax.swing.JFrame {
 
     /**
-     * Creates new form PrimerGUI
+     * Creates new form main
      */
-    public PrimerGUI() {
+    public main() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -29,27 +28,22 @@ public class PrimerGUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        BotonSaludos = new javax.swing.JButton();
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
+        Frame_1 = new javax.swing.JButton();
+        Frame_2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        BotonSaludos.setFont(new java.awt.Font("Tw Cen MT", 1, 24)); // NOI18N
-        BotonSaludos.setText("SALUDOS!!!!");
-        BotonSaludos.addActionListener(new java.awt.event.ActionListener() {
+        Frame_1.setText("Frame_1");
+        Frame_1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotonSaludosActionPerformed(evt);
+                Frame_1ActionPerformed(evt);
+            }
+        });
+
+        Frame_2.setText("Frame_2");
+        Frame_2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Frame_2ActionPerformed(evt);
             }
         });
 
@@ -58,24 +52,40 @@ public class PrimerGUI extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(113, 113, 113)
-                .addComponent(BotonSaludos, javax.swing.GroupLayout.PREFERRED_SIZE, 213, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(123, Short.MAX_VALUE))
+                .addGap(85, 85, 85)
+                .addComponent(Frame_1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 87, Short.MAX_VALUE)
+                .addComponent(Frame_2)
+                .addGap(78, 78, 78))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(162, 162, 162)
-                .addComponent(BotonSaludos)
-                .addContainerGap(211, Short.MAX_VALUE))
+                .addGap(138, 138, 138)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Frame_1)
+                    .addComponent(Frame_2))
+                .addContainerGap(172, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void BotonSaludosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonSaludosActionPerformed
-        JOptionPane.showMessageDialog(String "Hola Mundo!!!");
-    }//GEN-LAST:event_BotonSaludosActionPerformed
+    private void Frame_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Frame_1ActionPerformed
+                
+        Frame_1 ventana = new Frame_1();
+        ventana.setVisible(true);
+        this.setVisible(false);
+        
+    }//GEN-LAST:event_Frame_1ActionPerformed
+
+    private void Frame_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Frame_2ActionPerformed
+        
+        Frame_2 ventana = new Frame_2();
+        ventana.setVisible(true);
+        this.setVisible(false);
+        
+    }//GEN-LAST:event_Frame_2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -94,26 +104,26 @@ public class PrimerGUI extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(PrimerGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(PrimerGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(PrimerGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(PrimerGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new PrimerGUI().setVisible(true);
+                new main().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton BotonSaludos;
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton Frame_1;
+    private javax.swing.JButton Frame_2;
     // End of variables declaration//GEN-END:variables
 }

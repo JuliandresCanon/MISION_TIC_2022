@@ -1,0 +1,53 @@
+public class ConsultasDB extends Conexion{
+    
+    public boolean registrar(logica user) {
+        PreparedStatement preparar_statement_insert = null;
+        Connection con = getConexion();
+
+        String sql = "INSERT INTO datos (nombre, apellido) VALUES(?,?)";
+        try {
+            preparar_statement_insert = con.prepareStatement(sql);
+            preparar_statement_insert.setString(1, user.getNombre());
+            preparar_statement_insert.setString(2, user.getApellido());
+            preparar_statement_insert.execute();
+            return true;
+
+        } catch (SQLException e) {
+            System.err.println(e);
+            return false;
+        } finally {
+            try {
+                con.close();
+            } catch (SQLException e) {
+                System.err.println(e);
+            }
+
+        }
+
+    }
+    
+    public boolean modificar(logica user) {
+        PreparedStatement preparar_statement_update = null;
+        Connection con = getConexion();
+
+        String sql = "UPDATE datos SET apellido=? WHERE nombre=?";
+        try {
+            preparar_statement_update = con.prepareStatement(sql);
+            preparar_statement_update.setString(2, user.getNombre());
+            preparar_statement_update.setString(1, user.getApellido());
+            preparar_statement_update.execute();
+            return true;
+
+        } catch (SQLException e) {
+            System.err.println(e);
+            return false;
+        } finally {
+            try {
+                con.close();
+            } catch (SQLException e) {
+                System.err.println(e);
+            }
+
+        }
+    }
+}
